@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal profile of Subilash — student, gamer, video editor and photography enthusiast from Kochi, Kerala.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090b10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Subilash | Personal Profile">
+  <meta property="og:description" content="Student • Gamer • Video Editor • Photography Enthusiast">
+  <meta property="og:image" content="assets/profile.jpg">
+  <title>Subilash | Personal Profile</title>
+  <style>
+    :root { color-scheme: dark; --bg:#090b10; --panel:#111620; --muted:#a7b0c0; --line:#252d3a; --accent:#a5b4fc; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; color:#f5f7fb; background:radial-gradient(ellipse at 50% 0%, #1b2340 0, var(--bg) 52%); display:grid; place-items:center; padding:28px 16px; }
+    main { width:min(760px,100%); }
+    .card { overflow:hidden; border:1px solid var(--line); border-radius:28px; background:rgba(17,22,32,.88); box-shadow:0 24px 80px #0008; }
+    .cover { height:150px; background:linear-gradient(120deg,#202c4d,#111827 55%,#29304a); position:relative; }
+    .cover:after { content:""; position:absolute; inset:0; background:radial-gradient(circle at 80% 20%,#a5b4fc30,transparent 35%); }
+    .content { padding:0 30px 32px; }
+    .avatar { width:148px; height:148px; object-fit:cover; object-position:center 35%; border-radius:50%; border:5px solid var(--panel); margin-top:-76px; position:relative; background:#222; }
+    h1 { font-size:clamp(2.2rem,7vw,3.5rem); letter-spacing:-.06em; margin:18px 0 6px; }
+    .bio { color:#d7dced; font-size:1.02rem; line-height:1.7; margin:0; }
+    .location { color:var(--muted); margin:14px 0 26px; display:flex; align-items:center; gap:8px; }
+    .rule { height:1px; background:var(--line); margin:24px 0; }
+    h2 { font-size:.82rem; text-transform:uppercase; letter-spacing:.16em; color:var(--muted); margin:0 0 12px; }
+    .about { color:#d5dbe7; line-height:1.8; margin:0; }
+    .tags { display:flex; flex-wrap:wrap; gap:9px; margin-top:20px; }
+    .tag { border:1px solid #333e52; background:#171f2d; border-radius:999px; padding:8px 13px; font-size:.88rem; color:#e4e9f5; }
+    footer { text-align:center; color:#788397; font-size:.78rem; padding:18px 8px 0; }
+    @media(max-width:520px){ .content{padding:0 21px 25px}.cover{height:120px}.avatar{width:128px;height:128px;margin-top:-65px} }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" aria-label="Subilash personal profile">
+      <div class="cover"></div>
+      <div class="content">
+        <img class="avatar" src="assets/profile.jpg" alt="Profile photo of Subilash">
+        <h1>Subilash</h1>
+        <p class="bio">Student · Gamer · Video Editor · Photography Enthusiast</p>
+        <p class="location"><span aria-hidden="true">📍</span> Kochi, Kerala, India</p>
+        <div class="rule"></div>
+        <h2>About</h2>
+        <p class="about">Hey, I'm Subilash. I'm a student who enjoys gaming, video editing and capturing creative moments through photography. This is my corner of the internet.</p>
+        <div class="tags" aria-label="Interests">
+          <span class="tag">🎮 Gaming</span>
+          <span class="tag">🎬 Video editing</span>
+          <span class="tag">📷 Photography</span>
+          <span class="tag">📚 Student</span>
+        </div>
+      </div>
+    </section>
+    <footer>Personal profile · Subilash</footer>
+  </main>
+</body>
+</html>

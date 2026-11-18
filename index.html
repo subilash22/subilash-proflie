@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090b10">
   <meta name="description" content="Subi — student, creator and photographer. Personal portfolio and photo journal.">
-  <title>Subi — Personal Portfolio</title>
+  <title>Subi — Personal Website</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body><div id="scroll-progress"></div><div class="cursor-glow"></div>
   <div class="noise"></div>
   <header class="topbar">
     <a class="brand" href="#home"><span class="brand-mark">S</span><span>SUBI<span class="muted">.</span></span></a>
     <nav>
-      <a href="#about">About</a><a href="#work">Work</a><a href="#moments">Moments</a>
+      <a href="#about">About</a><a href="#work">Work</a><a href="#moments">Gallery</a><a href="#interests">Interests</a>
     </nav>
     <a class="nav-cta" href="https://www.instagram.com/hey_subilash/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
   </header>
@@ -65,7 +65,7 @@
         </a>
         <a class="work-card" href="https://www.instagram.com/hey_subilash/" target="_blank" rel="noreferrer">
           <div class="work-number">02</div><div class="work-icon">◈</div>
-          <div><h3>Vertex Studio</h3><p>A creative space for photo, video and visual design projects.</p></div><span class="work-arrow">↗</span>
+          <div><h3>Creative experiments</h3><p>A collection of things I make, edit and experiment with.</p></div><span class="work-arrow">↗</span>
         </a>
         <div class="work-card">
           <div class="work-number">03</div><div class="work-icon">◎</div>
@@ -77,17 +77,29 @@
     <section class="moments section" id="moments">
       <div class="section-head"><div class="section-label">03 / MOMENTS & MEMORIES</div><span class="small-note">A FEW FRAMES FROM MY CAMERA ROLL</span></div>
       <div class="photo-grid">
-        <figure class="photo photo-tall"><img src="assets/snow-trip.webp" alt="Subi in a blue hoodie in a snowy mountain landscape"><figcaption><span>01 — SOMEWHERE IN THE SNOW</span><span>↗</span></figcaption></figure>
-        <figure class="photo photo-wide"><img src="assets/portrait.webp" alt="Outdoor portrait of Subi beside a green lakeside"><figcaption><span>02 — OUT IN THE GREEN</span><span>↗</span></figcaption></figure>
+        <figure class="photo photo-tall zoomable"><img src="assets/snow-trip.webp" alt="Subi in a blue hoodie in a snowy mountain landscape"><figcaption><span>01 — SOMEWHERE IN THE SNOW</span><span>↗</span></figcaption></figure>
+        <figure class="photo photo-wide zoomable"><img src="assets/portrait.webp" alt="Outdoor portrait of Subi beside a green lakeside"><figcaption><span>02 — OUT IN THE GREEN</span><span>↗</span></figcaption></figure>
       </div>
 
       <div class="photo-grid extra-gallery">
-        <figure class="photo"><img src="assets/stream.webp" alt="A mountain stream flowing between rocks"><figcaption><span>03 — FLOWING MOMENTS</span><span>↗</span></figcaption></figure>
-        <figure class="photo"><img src="assets/red-fort.webp" alt="Red sandstone historic architecture"><figcaption><span>04 — LAYERS OF HISTORY</span><span>↗</span></figcaption></figure>
-        <figure class="photo"><img src="assets/buddha.webp" alt="A Buddha figurine photographed with a soft background"><figcaption><span>05 — STILLNESS</span><span>↗</span></figcaption></figure>
-        <figure class="photo"><img src="assets/tower.webp" alt="Traditional tower against a blue sky"><figcaption><span>06 — LOOKING UP</span><span>↗</span></figcaption></figure>
+        <figure class="photo zoomable"><img src="assets/stream.webp" alt="A mountain stream flowing between rocks"><figcaption><span>03 — FLOWING MOMENTS</span><span>↗</span></figcaption></figure>
+        <figure class="photo zoomable"><img src="assets/red-fort.webp" alt="Red sandstone historic architecture"><figcaption><span>04 — LAYERS OF HISTORY</span><span>↗</span></figcaption></figure>
+        <figure class="photo zoomable"><img src="assets/buddha.webp" alt="A Buddha figurine photographed with a soft background"><figcaption><span>05 — STILLNESS</span><span>↗</span></figcaption></figure>
+        <figure class="photo zoomable"><img src="assets/tower.webp" alt="Traditional tower against a blue sky"><figcaption><span>06 — LOOKING UP</span><span>↗</span></figcaption></figure>
       </div>
     </section>
+
+
+    <section class="section interests" id="interests">
+      <div class="section-label">04 / WHAT I LOVE EXPLORING</div>
+      <div class="interest-grid">
+        <article><span>⌘</span><h3>Technology</h3><p>Exploring computers, the web and how digital things are built.</p></article>
+        <article><span>◎</span><h3>Photography</h3><p>Finding interesting light, places and details worth remembering.</p></article>
+        <article><span>✳</span><h3>Creative editing</h3><p>Experimenting with visuals, colour and storytelling.</p></article>
+        <article><span>↗</span><h3>Learning</h3><p>Trying new skills, building things and improving over time.</p></article>
+      </div>
+    </section>
+    <section class="now-panel"><i></i><div><small>CURRENTLY</small><h3>Learning something new, every day.</h3><p>This little corner of the internet will keep growing with me.</p></div><a href="https://www.instagram.com/hey_subilash/" target="_blank" rel="noreferrer">FOLLOW ALONG ↗</a></section>
 
     <section class="closing">
       <div class="section-label">04 / THE NEXT CHAPTER</div>
@@ -96,6 +108,7 @@
     </section>
   </main>
 
+  <button id="back-to-top" aria-label="Back to top">↑</button><div class="lightbox" id="lightbox"><button aria-label="Close image">×</button><img alt="Expanded photograph"></div>
   <footer><a class="brand" href="#home"><span class="brand-mark">S</span><span>SUBI<span class="muted">.</span></span></a><span>MADE WITH CURIOSITY · 2026</span><a href="https://www.instagram.com/hey_subilash/" target="_blank" rel="noreferrer">@HEY_SUBILASH ↗</a><a href="#home">BACK TO TOP ↑</a></footer>
   <script src="script.js"></script>
 </body>

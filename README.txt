@@ -1,8 +1,6 @@
-SUBI — 3D PERSONAL PORTFOLIO
+SUBI — PERSONAL WEBSITE V3
 
-Updated with six personal photographs. The four newly supplied photos have a restrained natural colour grade and are optimized as WebP.
-Instagram: https://www.instagram.com/hey_subilash/
+Vertex Studio branding removed. Instagram: @hey_subilash
+Features: continuously spinning 3D orb, animated orbit rings, scroll reveal, reading progress bar, cursor glow, click-to-expand photo lightbox, back-to-top button, interests section and six personal photographs.
 
-Preview: open index.html in a browser.
-Publish: extract this ZIP, upload/replace the repository files on GitHub, keep the assets folder, then commit changes.
-Responsive layout; CSS-built animated 3D hero object; no heavy 3D library.
+Preview: open index.html. Publish: upload all files to your GitHub Pages repository and keep the assets folder.
